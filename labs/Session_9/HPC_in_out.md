@@ -125,11 +125,13 @@ Now the installation of the libraries is particularly simple. The advantage is t
 conda install numpy, matplotlib
 ```
 
-If we are done with installing, then we can deactivate the environment. This command does not destroy the conda environment, it is just sitting in the scratch folder for future use
+If we are done with installing, then we can deactivate the environment. 
 
 ```bash
 source deactivate
 ```
+>This command does not destroy the conda environment, it is just deactivate and sitting in the scratch folder for future use
+
 At this point, our job in the head node is done and we can close that tab or type *exit* on the terminal. 
 
 
