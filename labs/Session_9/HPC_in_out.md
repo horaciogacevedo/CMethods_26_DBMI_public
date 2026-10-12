@@ -61,9 +61,9 @@ Once the resource has been allocated, we can actually access it
 
 ![VNC deploy](../../Figures/fig_vnc_desktop_launch.png)
 
-Once you are inside your VNC you can open a desktop to get *inside* your compute resource.
+Once you are inside your VNC you can open a terminal to get *inside* your compute resource.
 
-We can check that when we type on the terminal 
+We can check that there is no python isntalled when we type on the terminal 
 
 ```bash
 python --version
@@ -79,7 +79,7 @@ Thus, we need to provide our interactive session with the right software.
 
 TAMU knowledge base pages have a lot of useful information to setup [anaconda](https://hprc.tamu.edu/kb/Software/ANACONDA/)
 
-First is to create a new conda environment. I will call this environment **hgenv** you can call it anything you want EXCEPT **base** (since there is a conflict with the default name)
+First is to create a new conda environment. I will call this environment **hgenv**, but you can call it anything you want EXCEPT **base** (since there is a conflict with the default name)
 
 The environment needs to be created on the login node. 
 
@@ -91,7 +91,7 @@ We move back to the portal and select
 
 ![shell login](../../Figures/fig_aces_login.png)
 
-We will write some commands here
+We will write some commands here with a short explanation
 
 ```bash
 # we want the conda environment in the scratch directory since it has more space.
@@ -119,13 +119,13 @@ source activate hgenv
 
 You will notice that in your prompt at the left, it appears (hgenv). That means that our conda environment has been activated!
 
-Now the installation of the libraries
+Now the installation of the libraries is particularly simple. The advantage is that it will install all the dependencies associated with the given library.
 
 ```bash
 conda install numpy, matplotlib
 ```
 
-If we are done with installing, then we can deactivate the environment
+If we are done with installing, then we can deactivate the environment. This command does not destroy the conda environment, it is just sitting in the scratch folder for future use
 
 ```bash
 source deactivate
