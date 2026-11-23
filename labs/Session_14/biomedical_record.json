@@ -1,0 +1,19 @@
+{
+  "gene": {
+    "symbol": "BRCA1",
+    "taxon": {
+      "name": "Homo sapiens"
+    }
+  },
+  "variants": [
+    {
+      "id": "v1",
+      "position": 100
+    },
+    {
+      "id": "v2",
+      "position": 250
+    }
+  ],
+  "curated": true
+}
